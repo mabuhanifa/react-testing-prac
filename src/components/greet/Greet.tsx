@@ -1,7 +1,7 @@
 export default function Greet() {
     return (
         <div>
-            hello
+            Hello
         </div>
     )
 }
