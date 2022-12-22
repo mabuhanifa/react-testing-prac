@@ -4,6 +4,7 @@ import Greet from "./Greet";
 
 // a -> w -> o
 // describe.only/skip
+// test.only/skip
 
 describe("Greet", () => {
 
