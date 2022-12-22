@@ -4,8 +4,13 @@ import Greet from "./Greet";
 // a -> w -> o
 // describe.only/skip
 
+// it == test
+// fit == test.only
+// xit == test.skip
+
+
 describe("Greet", () => {
-    test("greet renders correctly", () => {
+    it("greet renders correctly", () => {
         render(<Greet />);
         const textElement = screen.getByText('Hello');
         expect(textElement).toBeInTheDocument();
@@ -14,7 +19,7 @@ describe("Greet", () => {
 
 
 describe("nested", () => {
-    test("greet renders with a name", () => {
+    it("greet renders with a name", () => {
         render(<Greet name="Shourov" />);
         const textElement = screen.getByText("Hello Shourov");
         expect(textElement).toBeInTheDocument();
