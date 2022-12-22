@@ -4,14 +4,23 @@ import Greet from "./Greet";
 
 // a -> w -> o
 
-test.skip("greet renders correctly", () => {
-    render(<Greet />);
-    const textElement = screen.getByText('Hello');
-    expect(textElement).toBeInTheDocument();
+describe("Greet", () => {
+
+    test("greet renders correctly", () => {
+        render(<Greet />);
+        const textElement = screen.getByText('Hello');
+        expect(textElement).toBeInTheDocument();
+    })
+
+    test("greet renders with a name", () => {
+        render(<Greet name="Shourov" />);
+        const textElement = screen.getByText("Hello Shourov");
+        expect(textElement).toBeInTheDocument();
+    })
+
 })
 
-test.only("greet renders with a name", () => {
-    render(<Greet name="Shourov" />);
-    const textElement = screen.getByText("Hello Shourov");
-    expect(textElement).toBeInTheDocument();
-})
+
+
+
+
