@@ -10,7 +10,7 @@ import Greet from "./Greet";
 
 
 describe("Greet", () => {
-    it("greet renders correctly", () => {
+    fit("greet renders correctly", () => {
         render(<Greet />);
         const textElement = screen.getByText('Hello');
         expect(textElement).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe("Greet", () => {
 
 
 describe("nested", () => {
-    it("greet renders with a name", () => {
+    xit("greet renders with a name", () => {
         render(<Greet name="Shourov" />);
         const textElement = screen.getByText("Hello Shourov");
         expect(textElement).toBeInTheDocument();
