@@ -34,9 +34,14 @@
     }
   },
   "eslintConfig": {
+    "plugins": [
+      "jest-dom"
+    ],
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:jest-dom/recommended",
+      "eslint-config-prettier"
     ]
   },
   "browserslist": {
